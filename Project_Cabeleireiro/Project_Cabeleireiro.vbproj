@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A015DB48-AF8C-48B0-86C4-A65FB0170E61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project_Cabeleireiro.My.MyApplication</StartupObject>
+    <RootNamespace>Project_Cabeleireiro</RootNamespace>
+    <AssemblyName>Project_Cabeleireiro</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project_Cabeleireiro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project_Cabeleireiro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agendarservico.Designer.vb">
+      <DependentUpon>agendarservico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="agendarservico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagararea.Designer.vb">
+      <DependentUpon>apagararea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagararea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarcategoria.Designer.vb">
+      <DependentUpon>apagarcategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarcategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarcliente.Designer.vb">
+      <DependentUpon>apagarcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarfornecedor.Designer.vb">
+      <DependentUpon>apagarfornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarfornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarfuncionario.Designer.vb">
+      <DependentUpon>apagarfuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarfuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarproduto.Designer.vb">
+      <DependentUpon>apagarproduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarproduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apagarservico.Designer.vb">
+      <DependentUpon>apagarservico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apagarservico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atualizarcliente.Designer.vb">
+      <DependentUpon>atualizarcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="atualizarcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atualizarfuncionario.Designer.vb">
+      <DependentUpon>atualizarfuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="atualizarfuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDcabeleireiroDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDcabeleireiroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDcabeleireiroDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDcabeleireiroDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="entradaprodutos.Designer.vb">
+      <DependentUpon>entradaprodutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="entradaprodutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserirarea.Designer.vb">
+      <DependentUpon>inserirarea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserirarea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserircategoria.Designer.vb">
+      <DependentUpon>inserircategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserircategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserircliente.Designer.vb">
+      <DependentUpon>inserircliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserircliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserirfornecedor.Designer.vb">
+      <DependentUpon>inserirfornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserirfornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserirfuncionario.Designer.vb">
+      <DependentUpon>inserirfuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserirfuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserirproduto.Designer.vb">
+      <DependentUpon>inserirproduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserirproduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserirservico.Designer.vb">
+      <DependentUpon>inserirservico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserirservico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listar.Designer.vb">
+      <DependentUpon>Listar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marcacoeshoje.Designer.vb">
+      <DependentUpon>marcacoeshoje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marcacoeshoje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent2.Designer.vb">
+      <DependentUpon>MDIParent2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="procurarcliente.Designer.vb">
+      <DependentUpon>procurarcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procurarcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procurarfornecedor.Designer.vb">
+      <DependentUpon>procurarfornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procurarfornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procurarfuncionario.Designer.vb">
+      <DependentUpon>procurarfuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procurarfuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procurarproduto.Designer.vb">
+      <DependentUpon>procurarproduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procurarproduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procurarservico.Designer.vb">
+      <DependentUpon>procurarservico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="procurarservico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtosmaisvendidos.Designer.vb">
+      <DependentUpon>produtosmaisvendidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="produtosmaisvendidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtosstockminimo.Designer.vb">
+      <DependentUpon>produtosstockminimo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="produtosstockminimo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtosvendidos.Designer.vb">
+      <DependentUpon>produtosvendidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="produtosvendidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proximocliente.Designer.vb">
+      <DependentUpon>proximocliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proximocliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saidaprodutos.Designer.vb">
+      <DependentUpon>saidaprodutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="saidaprodutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veragenda.Designer.vb">
+      <DependentUpon>veragenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="veragenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="agendarservico.resx">
+      <DependentUpon>agendarservico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagararea.resx">
+      <DependentUpon>apagararea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarcategoria.resx">
+      <DependentUpon>apagarcategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarcliente.resx">
+      <DependentUpon>apagarcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarfornecedor.resx">
+      <DependentUpon>apagarfornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarfuncionario.resx">
+      <DependentUpon>apagarfuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarproduto.resx">
+      <DependentUpon>apagarproduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apagarservico.resx">
+      <DependentUpon>apagarservico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atualizarcliente.resx">
+      <DependentUpon>atualizarcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atualizarfuncionario.resx">
+      <DependentUpon>atualizarfuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entradaprodutos.resx">
+      <DependentUpon>entradaprodutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserirarea.resx">
+      <DependentUpon>inserirarea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserircategoria.resx">
+      <DependentUpon>inserircategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserircliente.resx">
+      <DependentUpon>inserircliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserirfornecedor.resx">
+      <DependentUpon>inserirfornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserirfuncionario.resx">
+      <DependentUpon>inserirfuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserirproduto.resx">
+      <DependentUpon>inserirproduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserirservico.resx">
+      <DependentUpon>inserirservico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar.resx">
+      <DependentUpon>Listar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marcacoeshoje.resx">
+      <DependentUpon>marcacoeshoje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent2.resx">
+      <DependentUpon>MDIParent2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procurarcliente.resx">
+      <DependentUpon>procurarcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procurarfornecedor.resx">
+      <DependentUpon>procurarfornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procurarfuncionario.resx">
+      <DependentUpon>procurarfuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procurarproduto.resx">
+      <DependentUpon>procurarproduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procurarservico.resx">
+      <DependentUpon>procurarservico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtosmaisvendidos.resx">
+      <DependentUpon>produtosmaisvendidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtosstockminimo.resx">
+      <DependentUpon>produtosstockminimo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtosvendidos.resx">
+      <DependentUpon>produtosvendidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proximocliente.resx">
+      <DependentUpon>proximocliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saidaprodutos.resx">
+      <DependentUpon>saidaprodutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veragenda.resx">
+      <DependentUpon>veragenda.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BDcabeleireiroDataSet1.xsc">
+      <DependentUpon>BDcabeleireiroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BDcabeleireiroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDcabeleireiroDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDcabeleireiroDataSet1.xss">
+      <DependentUpon>BDcabeleireiroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BDcabeleireiroDataSet11.xsc">
+      <DependentUpon>BDcabeleireiroDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BDcabeleireiroDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDcabeleireiroDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDcabeleireiroDataSet11.xss">
+      <DependentUpon>BDcabeleireiroDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
